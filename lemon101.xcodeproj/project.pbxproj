@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20E42EF277C48B800F22C98 /* lemon101App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E42EE277C48B800F22C98 /* lemon101App.swift */; };
+		B20E42F1277C48B800F22C98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E42F0277C48B800F22C98 /* ContentView.swift */; };
+		B20E42F3277C48B900F22C98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20E42F2277C48B900F22C98 /* Assets.xcassets */; };
+		B20E42F6277C48B900F22C98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20E42F5277C48B900F22C98 /* Preview Assets.xcassets */; };
+		B20E42FE277C4B7B00F22C98 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B20E42FD277C4B7B00F22C98 /* FirebaseAnalytics */; };
+		B20E4300277C4B7B00F22C98 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B20E42FF277C4B7B00F22C98 /* FirebaseAnalyticsSwift-Beta */; };
+		B20E4304277C4B7B00F22C98 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = B20E4303277C4B7B00F22C98 /* FirebaseRemoteConfig */; };
+		B20E4307277C4DAC00F22C98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B20E4306277C4DAC00F22C98 /* GoogleService-Info.plist */; };
+		B20E430B277C66F300F22C98 /* FeatureFlagHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E430A277C66F300F22C98 /* FeatureFlagHelper.swift */; };
+		B20E430D277C6CD500F22C98 /* defaultRemoteConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B20E430C277C6CD500F22C98 /* defaultRemoteConfig.plist */; };
+		B20E430F277C807600F22C98 /* ffl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E430E277C807600F22C98 /* ffl.swift */; };
+		B20E4312277C810D00F22C98 /* bayelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E4311277C810D00F22C98 /* bayelViewModel.swift */; };
+		B20E4314277C833A00F22C98 /* BuyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E4313277C833A00F22C98 /* BuyBox.swift */; };
+		B20E4316277EF14200F22C98 /* LemonObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E4315277EF14200F22C98 /* LemonObservable.swift */; };
+		B20E43182782DE5D00F22C98 /* RemoteConHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E43172782DE5D00F22C98 /* RemoteConHelper.swift */; };
+		B20E431C2783ED0300F22C98 /* LemonBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E431B2783ED0300F22C98 /* LemonBox.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B20E42EB277C48B800F22C98 /* lemon101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lemon101.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20E42EE277C48B800F22C98 /* lemon101App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lemon101App.swift; sourceTree = "<group>"; };
+		B20E42F0277C48B800F22C98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B20E42F2277C48B900F22C98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20E42F5277C48B900F22C98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B20E4306277C4DAC00F22C98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B20E430A277C66F300F22C98 /* FeatureFlagHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagHelper.swift; sourceTree = "<group>"; };
+		B20E430C277C6CD500F22C98 /* defaultRemoteConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = defaultRemoteConfig.plist; sourceTree = "<group>"; };
+		B20E430E277C807600F22C98 /* ffl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ffl.swift; sourceTree = "<group>"; };
+		B20E4311277C810D00F22C98 /* bayelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bayelViewModel.swift; sourceTree = "<group>"; };
+		B20E4313277C833A00F22C98 /* BuyBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyBox.swift; sourceTree = "<group>"; };
+		B20E4315277EF14200F22C98 /* LemonObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonObservable.swift; sourceTree = "<group>"; };
+		B20E43172782DE5D00F22C98 /* RemoteConHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConHelper.swift; sourceTree = "<group>"; };
+		B20E43192783E3B100F22C98 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B20E431B2783ED0300F22C98 /* LemonBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonBox.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20E42E8277C48B800F22C98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20E4300277C4B7B00F22C98 /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				B20E42FE277C4B7B00F22C98 /* FirebaseAnalytics in Frameworks */,
+				B20E4304277C4B7B00F22C98 /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20E42E2277C48B800F22C98 = {
+			isa = PBXGroup;
+			children = (
+				B20E43192783E3B100F22C98 /* README.md */,
+				B20E42ED277C48B800F22C98 /* lemon101 */,
+				B20E42EC277C48B800F22C98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B20E42EC277C48B800F22C98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20E42EB277C48B800F22C98 /* lemon101.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20E42ED277C48B800F22C98 /* lemon101 */ = {
+			isa = PBXGroup;
+			children = (
+				B20E42EE277C48B800F22C98 /* lemon101App.swift */,
+				B20E42F0277C48B800F22C98 /* ContentView.swift */,
+				B20E431A2783ECE300F22C98 /* view */,
+				B20E4310277C80F500F22C98 /* VM */,
+				B20E431D2785359400F22C98 /* recycled */,
+				B20E42F2277C48B900F22C98 /* Assets.xcassets */,
+				B20E430E277C807600F22C98 /* ffl.swift */,
+				B20E4305277C4BE200F22C98 /* firebase */,
+				B20E42F4277C48B900F22C98 /* Preview Content */,
+			);
+			path = lemon101;
+			sourceTree = "<group>";
+		};
+		B20E42F4277C48B900F22C98 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B20E42F5277C48B900F22C98 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B20E4305277C4BE200F22C98 /* firebase */ = {
+			isa = PBXGroup;
+			children = (
+				B20E4306277C4DAC00F22C98 /* GoogleService-Info.plist */,
+				B20E43172782DE5D00F22C98 /* RemoteConHelper.swift */,
+				B20E430C277C6CD500F22C98 /* defaultRemoteConfig.plist */,
+			);
+			path = firebase;
+			sourceTree = "<group>";
+		};
+		B20E4310277C80F500F22C98 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				B20E4315277EF14200F22C98 /* LemonObservable.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		B20E431A2783ECE300F22C98 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B20E431B2783ED0300F22C98 /* LemonBox.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B20E431D2785359400F22C98 /* recycled */ = {
+			isa = PBXGroup;
+			children = (
+				B20E4313277C833A00F22C98 /* BuyBox.swift */,
+				B20E4311277C810D00F22C98 /* bayelViewModel.swift */,
+				B20E430A277C66F300F22C98 /* FeatureFlagHelper.swift */,
+			);
+			path = recycled;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20E42EA277C48B800F22C98 /* lemon101 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20E42F9277C48B900F22C98 /* Build configuration list for PBXNativeTarget "lemon101" */;
+			buildPhases = (
+				B20E42E7277C48B800F22C98 /* Sources */,
+				B20E42E8277C48B800F22C98 /* Frameworks */,
+				B20E42E9277C48B800F22C98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lemon101;
+			packageProductDependencies = (
+				B20E42FD277C4B7B00F22C98 /* FirebaseAnalytics */,
+				B20E42FF277C4B7B00F22C98 /* FirebaseAnalyticsSwift-Beta */,
+				B20E4303277C4B7B00F22C98 /* FirebaseRemoteConfig */,
+			);
+			productName = lemon101;
+			productReference = B20E42EB277C48B800F22C98 /* lemon101.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20E42E3277C48B800F22C98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B20E42EA277C48B800F22C98 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B20E42E6277C48B800F22C98 /* Build configuration list for PBXProject "lemon101" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B20E42E2277C48B800F22C98;
+			packageReferences = (
+				B20E42FC277C4B7B00F22C98 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = B20E42EC277C48B800F22C98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20E42EA277C48B800F22C98 /* lemon101 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20E42E9277C48B800F22C98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20E42F6277C48B900F22C98 /* Preview Assets.xcassets in Resources */,
+				B20E42F3277C48B900F22C98 /* Assets.xcassets in Resources */,
+				B20E430D277C6CD500F22C98 /* defaultRemoteConfig.plist in Resources */,
+				B20E4307277C4DAC00F22C98 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20E42E7277C48B800F22C98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20E430F277C807600F22C98 /* ffl.swift in Sources */,
+				B20E431C2783ED0300F22C98 /* LemonBox.swift in Sources */,
+				B20E43182782DE5D00F22C98 /* RemoteConHelper.swift in Sources */,
+				B20E430B277C66F300F22C98 /* FeatureFlagHelper.swift in Sources */,
+				B20E42F1277C48B800F22C98 /* ContentView.swift in Sources */,
+				B20E4314277C833A00F22C98 /* BuyBox.swift in Sources */,
+				B20E42EF277C48B800F22C98 /* lemon101App.swift in Sources */,
+				B20E4312277C810D00F22C98 /* bayelViewModel.swift in Sources */,
+				B20E4316277EF14200F22C98 /* LemonObservable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B20E42F7277C48B900F22C98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B20E42F8277C48B900F22C98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20E42FA277C48B900F22C98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lemon101/Preview Content\"";
+				DEVELOPMENT_TEAM = 25HQJGGH6U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkda.lemon101;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B20E42FB277C48B900F22C98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lemon101/Preview Content\"";
+				DEVELOPMENT_TEAM = 25HQJGGH6U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkda.lemon101;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20E42E6277C48B800F22C98 /* Build configuration list for PBXProject "lemon101" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20E42F7277C48B900F22C98 /* Debug */,
+				B20E42F8277C48B900F22C98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20E42F9277C48B900F22C98 /* Build configuration list for PBXNativeTarget "lemon101" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20E42FA277C48B900F22C98 /* Debug */,
+				B20E42FB277C48B900F22C98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B20E42FC277C4B7B00F22C98 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B20E42FD277C4B7B00F22C98 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20E42FC277C4B7B00F22C98 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B20E42FF277C4B7B00F22C98 /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20E42FC277C4B7B00F22C98 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		B20E4303277C4B7B00F22C98 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20E42FC277C4B7B00F22C98 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B20E42E3277C48B800F22C98 /* Project object */;
+}
