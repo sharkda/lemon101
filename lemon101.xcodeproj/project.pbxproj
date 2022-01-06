@@ -101,9 +101,9 @@
 		B20E4305277C4BE200F22C98 /* firebase */ = {
 			isa = PBXGroup;
 			children = (
-				B20E4306277C4DAC00F22C98 /* GoogleService-Info.plist */,
-				B20E43172782DE5D00F22C98 /* RemoteConHelper.swift */,
 				B20E430C277C6CD500F22C98 /* defaultRemoteConfig.plist */,
+				B20E43172782DE5D00F22C98 /* RemoteConHelper.swift */,
+				B20E4306277C4DAC00F22C98 /* GoogleService-Info.plist */,
 			);
 			path = firebase;
 			sourceTree = "<group>";

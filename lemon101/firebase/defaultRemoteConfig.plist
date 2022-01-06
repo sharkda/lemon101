@@ -2,8 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>some_int</key>
-	<integer>33</integer>
+	<key>push_per_day</key>
+	<integer>1</integer>
+    <key>start_hour_of_day</key>
+    <integer>8</integer>
+    <key>start_minute_of_day</key>
+    <integer>0</integer>
+    <key>push_inerval_minutes</key>
+    <integer>540</integer>
 	<key>some_double</key>
 	<integer>0</integer>
 	<key>some_bool</key>

@@ -11,8 +11,13 @@ import SwiftUI
 
 /** **todo: adopt below.  */
 enum ConfigKey:String{
+    
+    case pushPerDay = "push_per_day"  //1,2
+    case startHourOfDay = "start_hour_of_day" //8
+    //case startMinuteOfDay = "start_minute_of_day" //0, no value
+    case pushIntervalMinutes = "push_inerval_minutes" // 9h : 540m
+    
     case someBool = "some_bool"
-    case someInt = "some_int"
     case someDouble = "some_double"
     static let pListFileName = "defaultRemoteConfig"
 }
@@ -27,7 +32,10 @@ final class LemonObservable: ObservableObject, Identifiable{
    
     let remoteConStateRelay = CurrentValueSubject<remConState, Never>(.idle)
     @Published var someBool = false
-    @Published var someInt: Int = 0
+    @Published var pushPerDay:Int = 0
+    @Published var startHourOfDay:Int = 0
+    //@Published var startMinuteOfDay:Int = 0
+    @Published var pushInternvalMinutes:Int = 0
     //@Published var someDouble: Double = 0.0
     let someDoubleRelay = CurrentValueSubject<Double, Never>(0.0)
     fileprivate var cancellabls = Set<AnyCancellable>()
@@ -55,15 +63,36 @@ final class LemonObservable: ObservableObject, Identifiable{
             })
             .store(in: &cancellabls)
         
-        remoteCon.numberPublisher(for: .someInt)
+        remoteCon.numberPublisher(for: .pushPerDay)
             .sink(receiveCompletion: { result in
                 if case .failure(let error) = result{
                     ffl(error.localizedDescription,.error);fatalError()
                 }
             }, receiveValue: { v0 in
-                self.someInt = v0 as? Int ?? 0
+                self.pushPerDay = v0 as? Int ?? 0
             })
             .store(in: &cancellabls)
+        
+        remoteCon.numberPublisher(for: .pushIntervalMinutes)
+            .sink(receiveCompletion: { result in
+                if case .failure(let error) = result{
+                    ffl(error.localizedDescription,.error);fatalError()
+                }
+            }, receiveValue: { v0 in
+                self.pushInternvalMinutes = v0 as? Int ?? 0
+            })
+            .store(in: &cancellabls)
+        
+        remoteCon.numberPublisher(for: .startHourOfDay)
+            .sink(receiveCompletion: { result in
+                if case .failure(let error) = result{
+                    ffl(error.localizedDescription,.error);fatalError()
+                }
+            }, receiveValue: { v0 in
+                self.startHourOfDay = v0 as? Int ?? 0
+            })
+            .store(in: &cancellabls)
+
         
         remoteCon.numberPublisher(for: .someDouble)
             .sink(receiveCompletion: { result in

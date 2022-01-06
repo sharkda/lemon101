@@ -17,9 +17,9 @@ struct LemonBox: View {
             Text("Lemonbox")
                 .font(.title)
             Text("state = \(lemonOb.remoteConStateRelay.value.desc())")
-            Text("some_bool = \(lemonOb.someBool.description)")
-            Text("some_int = \(lemonOb.someInt)")
-            Text("some_double = \(lemonOb.someDoubleRelay.value.description)")
+            Text("\(ConfigKey.pushPerDay.rawValue) = \(lemonOb.pushPerDay)")
+            Text("\(ConfigKey.pushIntervalMinutes.rawValue) = \(lemonOb.pushInternvalMinutes)")
+            Text("\(ConfigKey.startHourOfDay.rawValue) = \(lemonOb.startHourOfDay)")
         } //: vstack
         .font(.headline)
         .foregroundColor(.gray)
