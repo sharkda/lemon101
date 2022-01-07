@@ -51,6 +51,7 @@ final class LemonObservable: ObservableObject, Identifiable{
         .store(in: &cancellabls)
     }
     /** this will iterate throught all remote con value 1b1  */
+    /** the fatalError here is not necessary, I've have to c-out it for twofrogs to run*/
     fileprivate func loadRemoteConValue(){
         remoteCon.boolPublisher(for: .someBool)
             .sink(receiveCompletion: { result in
